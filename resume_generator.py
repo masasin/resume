@@ -305,7 +305,7 @@ class ResumeGenerator(object):
                                          base=base,
                                          ext=context.filetype)
                                      )
-        with open(output_file, "w") as fout:
+        with open(output_file, "w", encoding="utf-8") as fout:
             fout.write(output_data)
 
 
