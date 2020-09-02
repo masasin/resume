@@ -14,9 +14,9 @@
   \setromanfont{Linux Libertine O}
   \setsansfont{Linux Biolinum O}
   \setmonofont{DejaVu Sans Code}
-  \usepackage{xeCJK}
-  \setCJKmainfont[BoldFont=YuMincho Extrabold]{YuMincho Medium}
-  \setCJKsansfont[BoldFont=YuGothic Bold]{YuGothic Medium}
+  % \usepackage{xeCJK}
+  % \setCJKmainfont[BoldFont=Yu Mincho Extrabold]{YuMincho Medium}
+  % \setCJKsansfont[BoldFont=Yu Gothic Bold]{YuGothic Medium}
   \usepackage{xunicode} % extra support for unicode
 ~< endif >~
 
@@ -64,17 +64,22 @@
 
 
 \begin{document}
+
 ~< if business is defined >~
 \rfoot{\ifthenelse{\value{page}=1}{}{\addressfont\itshape\textcolor{gray}{\thepage}}}
 % Letter Information
 \recipient{<< business.letter.addressee >>}{<<business.name.formal>> \\ << business.letter.address >>}
 \date{\today}
 \opening{~< if business.letter.greeting is defined >~<< business.letter.greeting >>~< else >~To whom it may concern,~< endif >~}
-\closing{~< if business.letter.closing is defined >~<< business.letter.closing >>~< else >~Sincerely yours,~< endif >~}
+\closing{~< if business.letter.closing is defined >~<< business.letter.closing >>~< else >~Sincerely,~< endif >~}
 \enclosure[Attached]{résumé} % List of enclosed documents
 
 \makeatletter
-\let\@extrainfo\relax       % Remove extra info from letter
+\let\@extrainfo\relax       % Remove \@extrainfo
+\patchcmd{\makeletterhead}  % <cmd>
+  {\raggedright \@opening}  % <search>
+  {\@opening}               % <replace>
+  {}{}                      % <success><failure>
 \makeatother
 \makelettertitle            % Print letter title
 << business.body >>
@@ -82,6 +87,10 @@
 \makeletterclosing          % Print letter signature
 \newpage
 \setcounter{page}{1}
+
+  ~< if extra_info is defined >~
+    \extrainfo{<< extra_info >>}
+  ~< endif >~
 ~< endif >~
 
 \rfoot{\addressfont\itshape\textcolor{gray}{\ifthenelse{\value{page}=1}{\\\small updated << updated >>}{\thepage\\\small updated << updated >>}}}

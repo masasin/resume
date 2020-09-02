@@ -1,9 +1,20 @@
-~< if business.position.has_posting >~
-    I saw your job posting for << business.position.name >>
-    ~< if business.position.posting_id is defined >~ (<< business.position.posting_id >>) ~< endif >~ at your company.
+~< if business.letter.custom_pre is defined >~
+  << business.letter.custom_pre >>%
+~< endif >~~< if business.position.has_posting >~%
+I saw your job posting for << business.position.name >>
+    ~< if business.position.posting_id is defined >~ (<< business.position.posting_id >>) ~< endif >~
 ~< else >~
-    I would like to become << business.position.article >> << business.position.name >> at your company.
+    I would like to become << business.position.article >> << business.position.name >>
 ~< endif >~
+at 
+~< if business.name.abbrev is defined >~
+    << business.name.abbrev >>%
+~< else >~
+    << business.name.informal >>%
+~< endif >~
+~< if business.position.has_posting >~
+    , and would like to apply%
+~< endif >~.
 
 ~< if business.best_in is defined >~
     I know that
@@ -17,4 +28,8 @@
 
 \input{"<< pwd >>/templates/latex/letter_templates/~< if business.letter.template is defined >~<< business.letter.template >>~< else >~general~< endif >~"}
 
-Thank you for taking the time to review my résumé and letter.
+~< if business.letter.custom_post is defined >~
+  << business.letter.custom_post >>
+~< endif >~
+
+Thank you for taking the time to review my application.

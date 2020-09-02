@@ -17,13 +17,13 @@ theme:
   colour: purple
 #   colour: black, blue, green, grey, orange, purple, red; default is blue
 
-title: MEng, EIT (PEO)
+title: Python developer \hspace{4cm} \Large{with an eye for detail}
 extra_info: |
     Canadian
     \\
-    Python, ML, robotics, space
+    Master of Engineering
     \\
-    Available from March 2019
+    \href{https://tinyurl.com/jnassar-portfolio}{tinyurl.com/jnassar-portfolio}
 # quote: Ad astra
 
 # Markdown details
@@ -38,55 +38,44 @@ contact:
   linkedin: masasin
 
 # address:
-  # street: Eglantierlaan 49
-  # city: Wilrijk
-  # province: Antwerp
+  # street: Bondgenotenstraat 136
+  # city: Forest
+  # province: Brussels
   # country: Belgium
-  # post: 2610
+  # post: 1190
 
 order:
 # tag, show_title, name, type of sections. Use False if you want to leave it empty.
-  # - [intro, False, False, False]
-  # - [intro_with_name, False, Summary, False]
-  - [intro, True, Summary, False]
-  # - [general, False, False, False]
+  - [intro, False, Summary, False]
+  - [general, False, False, False]
   - [work, True, Work experience, experience]
-  # - [coop, False, Co-op internships, experience]
   - [education, True, Education, False]
   - [skills, True, Technical skills, False]
-  # - [publications, True, Publications, 0]
-  # - [courses, True, Selected courses, latextype_double_items]
-  - [coop, True, Co-op internships, experience]
-  - [certifications, True, Certifications, False]
   - [languages, True, Languages, False]
+  - [coop, True, Co-op internships, experience]
+#  - [publications, True, Publications, False]
+#  - [courses, True, Selected courses, latextype_double_items]
+#  - [certifications, True, Certifications, False]
 
 intro:
-  - name: ""
-    description: With many languages, and 3 years of work experience in 4 countries and many fields, I have a multidisciplinary perspective, and can easily adapt to my living and work environments. I continue to learn, and always strive to improve myself.
-
-intro_with_name:
   - name: "Summary"
-    description: With many languages, and 3 years of work experience in 4 countries and many fields, I have a multidisciplinary perspective, and can easily adapt to my living and work environments. I continue to learn, and always strive to improve myself.
+    description: As a Python and robotics expert, I work precisely with an eye for detail. I have a multidisciplinary perspective, having worked in many fields, countries, and languages, and can easily adapt to changing environments. I continue to learn, and always strive to improve.
 
 general: 
   - name: Interests
-    description: Robotics, process automation, machine learning, statistics, space
-  - name: Availability
-    description: March 2019
+    description: Python, robotics, automation, space, policy
+  - name: Certifications
+    description: Driving license (BE 2018), Society of Mechanical Engineers (JP 2017)
 
 certifications:
   - name: 2018
-    description: Driving license (Belgium; first obtained in Lebanon in 2010)
+    description: Driving license (Belgium)
   - name: 2017
     description: Member (Japan Society of Mechanical Engineers)
-  - name: 2013
-    description: Engineer in Training (Professional Engineers Ontario)
-  - name: 2012
-    description: CPR HCP (Healthcare Provider)
 
 skills:
   - name: Languages
-    description: Python (incl. scipy stack), C++, C, Matlab, Bash, \LaTeX\ etc
+    description: Python (incl. scipy stack, pytest), C++, C, Matlab, Bash, \LaTeX\ etc
   - name: Dev tools
     description: Git, PyPI, Pipenv, Docker, ROS, Spark, Devpi, Tox, Travis etc
   - name: OSes
@@ -102,14 +91,41 @@ languages:
   - name: Native
     description: English, French, Lebanese
   - name: Fluent
-    description: Japanese (C2), Arabic, Spanish
+    description: Japanese, Arabic
+  - name: Intermediate
+    description: Dutch, Spanish
   - name: Beginner
-    description: Dutch, German, Krio, Other
+    description: German, Krio, Other
 
 work:
+  - date: Dec 2019-- Aug 2020
+    about: Senior Python Developer
+    employer: Yields.io
+    location: Brussels, Belgium
+    urls:
+      employer: https://yields.io
+    notes:
+      - Added features requested by company or clients, fixed bugs, cleaned up codebase, and added client-facing Jupyter notebooks
+      - Split core monolith into three independent packages, allowing clients to implement their proprietary algorithms
+      - Added thousands of unit tests and multiple end-to-end tests/notebooks
+      - Automatically migrated client code and artifacts with version changes
+      - Worked on migrating integration tests from mocks to API in Docker
+
+  - date: Mar--Oct 2019
+    about: Industrial Automation Engineer
+    employer: Kapernikov
+    location: Brussels, Belgium
+    urls:
+      employer: https://kapernikov.com
+    notes:
+      - Developed a laser profiler-based computer vision system to monitor a conveyor belt using Python 3 and ROS
+      - Detected objects which could disrupt downstream process in real time
+      - Visualized measurements and events, and published to client VMS
+      - Interfaced with and fixed some bugs in existing C++ code
+
   - date: Feb--Dec 2018
     about: Data Scientist/Python Developer
-    employer: Sentiance NV/SA
+    employer: Sentiance
     location: Antwerp, Belgium
     urls:
       employer: https://sentiance.com
@@ -118,32 +134,28 @@ work:
       - Refactored core functionality into modular components
       - Verified and built machine learning models built in numpy and sklearn
       - Added new functionality and increased code efficiency with Spark
-      - Improved developer productivity using Docker and Pipenv
-      - Gained experience with DevPI, Jenkins, Kafka, AWS, and more
-      - Agile work environment.
 
 coop:
   - date: May--Aug 2012
     about: Design Engineer
-    employer: Starquip Integrated Systems, Ltd
+    employer: Starquip Integrated Systems
     location: Toronto, ON, Canada
     urls:
       employer: http://starquip.com
     notes:
       - Designed mechanical portion of custom pneumatic lift-assist devices
       - Created modular assemblies and circuits
-      - Reduced design time for new systems
+      - Significantly reduced time required to design new systems
       - Converted 2D drawings into 3D assemblies
       - Produced ASME-compliant drawings
 
   - date: Sep--Dec 2011
     about: Junior Project Engineer
-    employer: Kevin Quan Studios, Ltd
+    employer: Kevin Quan Studios
     location: Toronto, ON, Canada
     urls:
       employer: http://www.kqbikes.com
     notes:
-      - Completed basic and intermediate Solidworks instruction
       - Created assemblies and drawings of mountain and racing bicycles
       - Wrote airfoil generator and exporter using LibreOffice Calc, Python
       - Performed 2D and 3D CFD analysis of airfoils and bicycles
@@ -152,14 +164,14 @@ coop:
 
   - date: Jan--Apr 2011
     about: Hardware Associate
-    employer: Intelligent Mechatronics Systems, Inc
+    employer: Intelligent Mechatronics Systems
     location: Waterloo, ON, Canada
     urls:
       employer: http://www.intellimec.com
     notes:
       - Prototyped hardware solutions for future products using Altium
       - Programmed microcontrollers using C and C++
-      - Provided general assistance to lead design engineers
+      - Investigated self-resonance in inductors
 
   - date: May--Sep 2010
     about: Research Assistant
@@ -188,7 +200,7 @@ coop:
 
   - date: Jan--Apr 2009
     about: Engineer in Training
-    employer: Sierra Construction Systems, Ltd
+    employer: Sierra Construction Systems
     location: Freetown, Sierra Leone
     urls:
       employer: http://www.sierraconstructionsystems.com
@@ -208,13 +220,12 @@ education:
       affiliation: www.mechatronics.me.kyoto-u.ac.jp
     notes:
       - "Thesis: \\href{https://github.com/masasin/spirit/releases/download/v1.0/mshtsy_thesis.pdf}{A UAV Teleoperation System Using Subimposed Past Images}"
-      - Created a third-person view for drones using Python and ROS
-      - Designed, conducted, and analyzed user experiments to check efficacy
+      - Created and tested a third-person view for drones using Python and ROS
       - Led the lab's teleop rescue robot software team (for RoboCup Japan)
       - Tutored Python and software development best practices
   - date: 2008--2013
     school: University of Waterloo
-    location: Waterloo, ON
+    location: Waterloo, ON, Canada
     major: BASc, Honours Mechatronics Engineering
     urls:
       school: http://www.uwaterloo.ca
@@ -223,7 +234,6 @@ education:
       - Completed six co-op internships in three countries
       - Cofounded the Engineering Ambassador program
       - Directed the UW EngSoc Mental Health Awareness directorship
-      - Helped organize an international symposium on health technology
       - Taught Japanese with the UW Culture and Language Exchange Club
 
 projects:
@@ -394,4 +404,3 @@ courses:
 #     You can have multiple paragraphs.
 #
 #     Like this!
-
