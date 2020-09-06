@@ -1,7 +1,7 @@
 # Documentation at bottom of file
 name:
-  first: 勝者
-  last: 神優
+  first: Jean
+  last: Nassar
   abbrev: masasin 
 
 photo:
@@ -17,13 +17,13 @@ theme:
   colour: purple
 #   colour: black, blue, green, grey, orange, purple, red; default is blue
 
-title: まさひと・しんゆう（工学修士）
+title: 学職経歴書
 extra_info: |
-    カナダ国籍
+    29歳男性、カナダ籍
     \\
-    Python，機械学習，ロボット，航空宇宙
+    工学修士
     \\
-    2月下旬・3月上旬に日本にいます
+    \href{https://tinyurl.com/jnassar-portfolio}{tinyurl.com/jnassar-portfolio}
 # quote: Ad astra
 
 # Markdown details
@@ -32,59 +32,45 @@ extra_info: |
 
 contact:
   email: jn.masasin@gmail.com
-  # mobile: +32 485 29 17 72
+  mobile: +32 485 29 17 72
   # website: masasin.ca
   github: masasin
   linkedin: masasin
 
 # address:
-  # street: Eglantierlaan 49
-  # city: Wilrijk
-  # province: Antwerp
+  # street: Bondgenotenstraat 136
+  # city: Forest
+  # province: Brussels
   # country: Belgium
-  # post: 2610
+  # post: 1190
 
 order:
 # tag, show_title, name, type of sections. Use False if you want to leave it empty.
-  # - [intro, False, False, False]
-  - [intro_with_name, False, Summary, False]
-  # - [intro, True, 自己PR, False]
-  # - [general, False, False, False]
-  - [work, True, 業務経歴, experience]
-  - [coop, False, フルタイム有償インターンシップ, experience]
-  # - [coop, False, Co-op internships, experience]
-  - [education, True, その他経験, False]
+  - [intro, False, Summary, False]
+  - [general, False, False, False]
+  - [work, True, 職務経歴, experience]
+  - [education, True, 学歴, False]
   - [skills, True, スキル, False]
-  # - [publications, True, Publications, 0]
-  # - [courses, True, Selected courses, latextype_double_items]
-  - [certifications, True, 資格, False]
   - [languages, True, 言語, False]
+  - [coop, True, フルタイム優賞インターンシップ, experience]
+#  - [publications, True, 論文, False]
+#  - [courses, True, 授業, latextype_double_items]
+  - [certifications, True, 資格, False]
 
 intro:
-  - name: ""
-    description: |
-      様々な職種に携わってきたおかげで，幅広い知識とスキルや，多角的な視野を身に付けることができた．
-      前職と大学でのフルタイム有償インターンシップを合わせて，約3年間働いて，様々な業界で実務経験を得，リーダーシップスキルも活かせた．
-      更に，多言語を話せて，業務経験を４ヶ国で得たため，国や言葉や文化や職種にとって適応性が高い．
-      今も勉強や取り組みを続けており，前向きで自己改善を常に目指している．
-
-intro_with_name:
   - name: "自己PR"
     description: |
-      様々な職種に携わってきたおかげで，幅広い知識とスキルや，多角的な視野を身に付けることができた．
-      前職と大学でのフルタイム有償インターンシップを合わせて，約3年間働いて，様々な業界で実務経験を得，リーダーシップスキルも活かせた．
-      更に，多言語を話せて，業務経験を４ヶ国で得たため，国や言葉や文化や職種にとって適応性が高い．
-      今も勉強や取り組みを続けており，前向きで自己改善を常に目指している．
+      経歴5年間を持つ慎重に働くロボットやPythonの専門家である。
+      様々な職種に携わってきたおかげで、新しい事を早く習得し、幅広い知識とスキルや、多角的な視野を身に付けた。
+      更に、多言語を話せて、業務経験を４ヶ国で得たため、国や言葉や文化や職種にとって適応性が高い。
 
 general: 
-  - name: Interests
-    description: Robotics, process automation, machine learning, statistics, space
-  - name: Availability
-    description: March 2019
+  - name: 興味
+    description: Python、ロボット、プロセス自動化
 
 certifications:
   - name: 2018年7月
-    description: 普通自動車　第一種免許　取得(ベルギー．最初なのは2010年1月に)
+    description: ベルギー　普通自動車　第一種免許　取得(日本で切替可能)
   - name: 2017年3月
     description: 日本機械学会　正員　入会
   - name: 2013年6月
@@ -93,117 +79,137 @@ certifications:
     description: 応急処置　心肺蘇生(CPR HCP)資格　取得
 
 skills:
-  - name: Languages
-    description: Python (incl. scipy stack), C++, C, Matlab, Bash, \LaTeX\ etc
-  - name: Dev tools
-    description: Git, PyPI, Pipenv, Docker, ROS, Spark, Devpi, Tox, Travis etc
-  - name: OSes
+  - name: ソフト開発言語
+    description: Python (scipy、pytest等含む), C++, C, Matlab, Bash, \LaTeX 等
+  - name: ソフト開発技術
+    description: Git, PyPI, Pipenv, Docker, ROS, Spark, Devpi, Tox, Travis等
+  - name: OS
     description: Linux (Arch, Fedora, Ubuntu), Mac OS X, Windows (XP+)
-  - name: Hardware
-    description: RPi, Arduino, ESP8266, MicroPython, mbed, PIC, AVR, PLCs
-  - name: 3D software
+  - name: 開発環境
+    description: RPi, Arduino, ESP8266, MicroPython, mbed, PIC, AVR, PLC
+  - name: ３Dソフト
     description: Solidworks, Autodesk Inventor, AutoCAD, Sketchup
-  - name: Other
-    description: Vim, Gimp, Inkscape, office suites (LibreOffice, Microsoft, Google)
+  - name: その他
+    description: Vim, Gimp, Inkscape, オフィス (LibreOffice, Microsoft, Google)
 
 languages:
   - name: ネイティブ
-    description: 英語，フランス語，レバノン語
+    description: 英語、フランス語、レバノン語
   - name: 流暢
-    description: 日本語，アラビア語，スペイン語
+    description: 日本語、アラビア語
+  - name: 中級
+    description: オランダ語、スペイン語
   - name: 初級
-    description: オランダ語，ドイツ語，クリオ語，その他
+    description: ドイツ語、クリオ語、その他
 
 work:
+  - date: 2019年12月〜2020年8月
+    about: シニアーPythonデベロッパー
+    employer: Yields.io
+    location: ベルギー
+    urls:
+      employer: https://yields.io
+    notes:
+      - コードをテスト、リファクタリング、安定化し、バグを修正し、新機能を開発し、顧客向けのJupyter Notebookを追加した
+      - コードベースを3つに分け、独立にアップデートできるようになり、顧客のアルゴリズム等も独自で使用できるようになった
+      - pytestを用いて数千個の単体テストを追加した
+      - 顧客のコードや生成ファイルを自動更新機能を追加し、古いコードを廃止した
+      - 既存の統合テストをモックからライブのDocker環境に移り始めた
+
+  - date: 2019年3月〜2019年10月
+    about: インダストリー4.0コンサルタント
+    employer: Kapernikov
+    location: ベルギー
+    urls:
+      employer: https://kapernikov.com
+    notes:
+      - レーザープロファイラーを用いた、コンベアベルトを監視するPython 3やROSのコンピュータービジョンシステムを開発した
+      - 下流で障害物になり得る物体をリアルタイムで検出した
+      - 生や解析したデータを可視化して顧客のビデオ管理システムに送信した
+      - 現存のC++コードと連動しながらバグ修正も行った
+
   - date: 2018年2月〜2018年12月
-    about: データサイエンティスト・Pythonせんもんっか
-    employer: Sentiance NV/SA
-    location: ベルギー，アントワープ
+    about: データサインティスト・Python専門家
+    employer: Sentiance
+    location: ベルギー
     urls:
       employer: https://sentiance.com
     notes:
       - 会社のコードベースをPython 2からPython 3に移動していた
       - コア機能をモジュール化された要素にリファクタリングした
       - NumpyやScikit-learn等の機械学習モデルのビルドや検証を行った
-      - Spark等を利用し，新機能を導入して，プログラムを効率よくした
-      - DockerやPipenv等を使って，同僚の開発者の生産性を高めた
-      - DevPI，Jenkins，Kafka，AWS等の知識を得た
-      - 開発はアジャイル手法を使用した
+      - Spark等を利用し、新機能を導入して、プログラムを効率よくした
 
 coop:
   - date: 2012年5月〜2012年8月
-    about: デザイン技術者
-    employer: Starquip Integrated Systems, Ltd
-    location: カナダ，オンタリオ州，トロント
+    about: デザイン技術士
+    employer: Starquip Integrated Systems
+    location: カナダ
     urls:
       employer: http://starquip.com
     notes:
-      - Designed mechanical portion of custom pneumatic lift-assist devices
-      - Created modular assemblies and circuits
-      - Reduced design time for new systems
-      - Converted 2D drawings into 3D assemblies
-      - Produced ASME-compliant drawings
+      - カスタムな工業用の空気駆動・真空式のリフトアシスト装置を設計した
+      - Solidworksを使用して、顧客の個々のニーズに基づいて装置を設計した
+      - SolidworksやAutoCADでモジュール化し、設計時間を85\%短縮した
+      - 現存の製品の二次元図面を三次元化した
+      - ASME規格に則った図面を作成した
 
   - date: 2011年9月〜2011年12月
-    about: ジュニアプロジェクト技術者
-    employer: Kevin Quan Studios, Ltd
-    location: カナダ，オンタリオ州，トロント
+    about: ジュニアプロジェクト技術士
+    employer: Kevin Quan Studios
+    location: カナダ
     urls:
       employer: http://www.kqbikes.com
     notes:
-      - Completed basic and intermediate Solidworks instruction
-      - Created assemblies and drawings of mountain and racing bicycles
-      - Wrote airfoil generator and exporter using LibreOffice Calc, Python
-      - Performed 2D and 3D CFD analysis of airfoils and bicycles
-      - Determined the optimum configuration for several racing bicycles
-      - Designed tooling molds and parts for various bicycle components
+      - Solidworksでマウンテンバイクや競走用の自転車の設計した
+      - NACA 4桁系列に則った翼型生成プログラムを作成した
+      - 2・3次元計算流体力学で複数のロードバイクの空気抵抗を最小化した
+      - 自転車の部品毎の金型を設計した
 
   - date: 2011年1月〜2011年4月
-    about: ハードウェア技術者
-    employer: Intelligent Mechatronics Systems, Inc
-    location: カナダ，オンタリオ州，ウォータールー
+    about: ハードウェア技術士
+    employer: Intelligent Mechatronics Systems
+    location: カナダ
     urls:
       employer: http://www.intellimec.com
     notes:
-      - Prototyped hardware solutions for future products using Altium
-      - Programmed microcontrollers using C and C++
-      - Provided general assistance to lead design engineers
+      -  CやC++で、マイコンのプログラミングを行った
+      -  Altium Designerを利用して、将来の商品の製作機を作成し、実験を行った
+      - インダクタの自己共振を研究した
 
   - date: 2010年5月〜2010年9月
-    about: 研究アシスタント
-    department: マルチスケール積層造形研究室
+    about: 研究助手
+    department: 多規模積層造形研究室
     employer: ウォータールー大学
-    location: カナダ，オンタリオ州，ウォータールー
+    location: カナダ
     urls:
       employer: http://uwaterloo.ca
       department: http://rpl.uwaterloo.ca
     notes:
-      - Designed, procured, and fabricated parts for a 3D printing workstation
-      - Workstation produces 3D scaffolds for bone and cartilage regrowth
-      - Performed image processing on electron micrographs using Octave
+      - 骨・軟骨再製用の超精密立体自由造形機の設計・見積もり・購入・加工・組立
+      - MatlabとOctaveを使って走査電子顕微鏡写真の画像処理を行った
 
   - date: 2009年9月〜2009年12月
-    about: 研究アシスタント
+    about: 研究助手
     department: 移動ロボット研究室
     employer: ベイルート・アメリカ大学
-    location: レバノン，ベイルート
+    location: レバノン
     urls:
       employer: http://www.aub.edu.lb/
       department: http://www.aub.edu.lb/fea/me/research_labs/cvl/Pages/home.aspx
     notes:
-      - Developed a positional navigation system for robots using C++
-      - Used an EKF to improve estimates obtained from multiple sources
+    - 市販の慣性計測装置を使用して、C++でロボットの位置を推定した
+    - Matlabで多由来位置推定を融合し、拡張カルマンフィルターで誤差を収めた
 
   - date: 2009年1月〜2009年4月
-    about: 訓練中エンジニア
-    employer: Sierra Construction Systems, Ltd
-    location: シエラレオネ，フリータウン
+    about: 研修中技術士
+    employer: Sierra Construction Systems
+    location: シエラレオネ
     urls:
       employer: http://www.sierraconstructionsystems.com
     notes:
-      - Computerized payroll using Microsoft Excel and Word programming
-      - Reduced man-hours needed for processing payroll by almost 6000\%
-      - Performed cost and time estimation for various construction projects
+      - Excel等で、会社の支払い名簿システムを自動化し、人時効率を60倍向上した
+      - 建設プロジェクトの構造図・電気図を作成し、予算も算定した
 
 education:
   - date: 2014年4月〜2017年3月
@@ -215,37 +221,37 @@ education:
       school: http://kyoto-u.ac.jp
       affiliation: www.mechatronics.me.kyoto-u.ac.jp
     notes:
-      - "Thesis: \\href{https://github.com/masasin/spirit/releases/download/v1.0/mshtsy_thesis.pdf}{A UAV Teleoperation System Using Subimposed Past Images}"
-      - Created a third-person view for drones using Python and ROS
-      - Designed, conducted, and analyzed user experiments to check efficacy
-      - Led the lab's teleop rescue robot software team (for RoboCup Japan)
-      - Tutored Python and software development best practices
-  - date: 2008--2013
-    school: University of Waterloo
-    location: Waterloo, ON
-    major: BASc, Honours Mechatronics Engineering
+      - "研究テーマ：\\href{https://github.com/masasin/spirit/releases/download/v1.0/mshtsy_thesis.pdf}{過去画像を用いた飛行ロボットの遠隔操作手法}"
+      - PythonやROSを使用し，過去画像を用いたドローンの遠隔操作システムを開発し、利用者実験を行った
+      - ロボカップジャパン遠隔救命ロボットのソフトウェア開発チームを導いた
+      - Pythonやソフト開発の基礎を教えた
+  - date: 2008年9月〜2013年7月
+    school: ウォータールー大学
+    location: カナダ
+    major: BASc, メカトロニクス工学専攻
     urls:
       school: http://www.uwaterloo.ca
       major: https://uwaterloo.ca/mechanical-mechatronics/engineering/program-overview
     notes:
-      - Completed six co-op internships in three countries
-      - Cofounded the Engineering Ambassador program
-      - Directed the UW EngSoc Mental Health Awareness directorship
-      - Helped organize an international symposium on health technology
-      - Taught Japanese with the UW Culture and Language Exchange Club
+      - 様々なロボット関連活動を行い，機械やロボットの操作・制御・設計・開発等も教わって活用した
+      - 3ヶ国で6つの4ヶ月ずつのフルタイム優賞インターンシップをした
+      - 大学の工学協会のメンヘラ意識委員会を運営した
+      - 工学大使制度を共同で創設した
+      - 学部生バイオエンジニアの秘書として，国際シンポジウムを企画・開催した
+      - ボランティアとして初級・中級日本語を教えた
 
 projects:
   - Résumé and cover letter generator (Python, Jinja, and \LaTeX)
 
 courses:
-  - Modern control theory
-  - Digital control applications
-  - Automatic control systems
-  - Microprocessor systems
-  - Electromech. machine design
-  - Mechatronic systems
-  - Computer structures, realtime
-  - Algorithms and data structures
+  - 現代制御論
+  - 応用デジタル制御
+  - 自動制御システム
+  - マイコンシステム
+  - 機械電気機器設計
+  - メカトロニクス
+  - コンピューター構造とリアルタイムシステム
+  - アルゴリズムやデータ構造
 
 
 # Template
