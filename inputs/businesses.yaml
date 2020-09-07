@@ -18,8 +18,47 @@
 #     addressee: who will receive the letter? default is HR Department
 #     address: what is the address?
 #     greeting: the start of the letter; default is To whom it may concern
-#     closing: the end of the letter; default is sincerely yours
+#     closing: the end of the letter; default is Sincerely
 #
 #   You can also add any fields that you want at this level, and also add them to the template.
 
+"space-applications":
+  name:
+    formal: Space Applications Services NV/SA
+    informal: Space Applications
+    abbrev: SAS
+  field: aerospace
 
+  position:
+    name: robotics engineer
+    article: a
+    has_posting: False
+
+  letter:
+    template: robotics
+    addressee: HR Department
+    address: Leuvensesteenweg 325 \\ 1932 Sint-Stevens-Woluwe
+    custom_pre: |
+      I am a Canadian robotics engineer and Python developer, currently living in Brussels.
+      I lost my job last month due to a bureaucratic error, and don't currently have a work permit for Belgium.
+      However,
+    custom_post: |
+      I have adored space since I was a young child, and one of the goals I'm working towards is becoming an astronaut.
+      Getting to work on things that go to space is another aspiration of mine.
+      If you would sponsor my visa, I would love to work with you.
+
+adimian:
+  name:
+    formal: Adimian.be SPRL
+    informal: Adimian
+  field: consulting
+
+  position:
+    name: Senior Python Developer
+    article: a
+    has_posting: True
+
+  letter:
+    template: python
+    addressee: HR Department
+    address: Rue Royale 87 \\ 1000 Brussels
