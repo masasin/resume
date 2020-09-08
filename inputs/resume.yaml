@@ -22,8 +22,6 @@ extra_info: |
     29M, Canadian
     \\
     Master of Engineering
-    \\
-    \href{https://tinyurl.com/jnassar-portfolio}{tinyurl.com/jnassar-portfolio}
 # quote: Ad astra
 
 # Markdown details
@@ -33,7 +31,7 @@ extra_info: |
 contact:
   email: jn.masasin@gmail.com
   mobile: +32 485 29 17 72
-  # website: masasin.ca
+  website: tinyurl.com/jn-projects
   github: masasin
   linkedin: masasin
 
