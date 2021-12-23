@@ -39,7 +39,7 @@ def load_yaml(filename):
 
     """
     with open(filename) as file:
-        return yaml.load(file)
+        return yaml.load(file, Loader=yaml.FullLoader)
 
 
 def files_of_type(ext, directory="."):
