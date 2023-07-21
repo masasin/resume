@@ -39,7 +39,7 @@ def load_yaml(filename):
 
     """
     with open(filename) as file:
-        return yaml.load(file)
+        return yaml.load(file, yaml.FullLoader)
 
 
 def files_of_type(ext, directory="."):
@@ -133,7 +133,7 @@ class ResumeGenerator(object):
 
         Parameters
         ----------
-        context_namess : list[str]
+        context_names : list[str]
             The names of the renderers for the formats to use.
         no_letters : bool
             Whether to generate cover letters with LaTeX.

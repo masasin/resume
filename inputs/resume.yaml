@@ -19,7 +19,7 @@ theme:
 
 title: Python developer \hspace{4cm} \Large{with an eye for detail}
 extra_info: |
-    29M, Canadian
+    32M, Canadian
     \\
     Master of Engineering
 # quote: Ad astra
@@ -30,17 +30,17 @@ extra_info: |
 
 contact:
   email: jn.masasin@gmail.com
-  mobile: +32 485 29 17 72
-  website: tinyurl.com/jn-projects
+  mobile:  +32 499 41 28 47
+  website: jnassar.com
   github: masasin
   linkedin: masasin
 
 # address:
-  # street: Bondgenotenstraat 136
-  # city: Forest
-  # province: Brussels
+  # street: Boomgaardstraat 113, Bus 202
+  # city: Antwerpen
+  # province: Antwerpen
   # country: Belgium
-  # post: 1190
+  # post: 2018
 
 order:
 # tag, show_title, name, type of sections. Use False if you want to leave it empty.
@@ -57,11 +57,14 @@ order:
 
 intro:
   - name: "Summary"
-    description: As a Python and robotics expert, I work precisely with an eye for detail. I have a multidisciplinary perspective, having worked in many fields, countries, and languages, and can easily adapt to changing environments. I continue to learn, and always strive to improve.
+    description: |
+      As a Python and robotics expert, I work precisely with an eye for detail.
+      I have a multidisciplinary perspective, having worked in many fields, countries, and languages, and can easily adapt to changing environments.
+      I continue to learn, and always strive to improve.
 
 general: 
   - name: Interests
-    description: Python, robotics, automation, space, policy
+    description: Python, robotics, AI, automation, space, policy
   - name: Certifications
     description: Driving license (BE 2018), Society of Mechanical Engineers (JP 2017)
 
@@ -96,7 +99,7 @@ languages:
     description: German, Krio, Other
 
 work:
-  - date: Dec 2019-- Aug 2020
+  - date: Dec 2019--Aug 2020
     about: Senior Python Developer
     employer: Yields.io
     location: Brussels, Belgium

@@ -1,5 +1,5 @@
-Jinja2==2.8
-MarkupSafe==0.23
-PyYAML==3.11
-GitPython==1.0.2
-tqdm==3.8.0
+Jinja2
+MarkupSafe
+PyYAML
+GitPython
+tqdm

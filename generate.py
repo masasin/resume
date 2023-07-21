@@ -6,10 +6,13 @@ More information is available in the README file.
 
 """
 import argparse
+import os
 import sys
 
 from contexts import CONTEXTS
 from resume_generator import environment_setup, ResumeGenerator
+
+os.environ["PATH"] += ":/Library/TeX/texbin"
 
 
 class DefaultListAction(argparse.Action):
