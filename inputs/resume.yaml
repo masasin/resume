@@ -17,11 +17,10 @@ theme:
   colour: purple
 #   colour: black, blue, green, grey, orange, purple, red; default is blue
 
-title: Python developer \hspace{4cm} \Large{with an eye for detail}
+title: Python \& Robotics Expert \hspace{4cm} \Large{with 10+ years of experience}
 extra_info: |
-    32M, Canadian
-    \\
-    Master of Engineering
+    32M, Canadian \\
+    Master of Engineering \\
 # quote: Ad astra
 
 # Markdown details
@@ -47,8 +46,8 @@ order:
   - [intro, False, Summary, False]
   - [general, False, False, False]
   - [work, True, Work experience, experience]
+  - [projects, True, Projects, False]
   - [education, True, Education, False]
-  - [projects, True, Projects, experience]
   - [skills, True, Technical skills, False]
   - [languages, True, Languages, False]
 #  - [coop, True, Co-op internships, experience]
@@ -59,13 +58,14 @@ order:
 intro:
   - name: "Summary"
     description: |
-      As a Python and robotics expert, I work precisely with an eye for detail.
-      I have a multidisciplinary perspective, having worked in many fields, countries, and languages, and can easily adapt to changing environments.
-      I continue to learn, and always strive to improve.
+      I'm a senior engineer with 10+ years of multidisciplinary experience.
+      I focus on software development and hardware interfacing,
+      but I am also strong in mechanical design, data science, and web dev. 
 
 general: 
-  - name: Interests
-    description: Python, robotics, AI, automation, space, policy
+  - name: Availability
+    description: |
+      Available from 1 September 2023. EU Blue Card holder.
   - name: Certifications
     description: Driving license (BE 2018), Society of Mechanical Engineers (JP 2017)
 
@@ -232,8 +232,6 @@ education:
       affiliation: www.mechatronics.me.kyoto-u.ac.jp
     notes:
       - "Thesis: \\href{https://github.com/masasin/spirit/releases/download/v1.0/mshtsy_thesis.pdf}{A UAV Teleoperation System Using Subimposed Past Images}"
-      - Created and tested a third-person view for drones using Python and ROS
-      - Led the lab's teleop rescue robot software team (for RoboCup Japan)
       - Tutored Python and software development best practices
       - Worked on gestural controls for robots
   - date: 2008--2013
@@ -250,31 +248,21 @@ education:
       - Taught Japanese with the UW Culture and Language Exchange Club
 
 projects:
-   - date: 2015--2017
-     about: SPIRIT
-     department: Mechatronics Lab, Kyoto University
-     urls:
-       employer: https://github.com/masasin/spirit
-       department: http://www.mechatronics.me.kyoto-u.ac.jp/index.php?ml_lang=en
-     topic: A UAV Teleoperation System Using Subimposed Past Images
-     location: Kyoto, Japan
-     notes:
-       - Masters thesis project, developing a third-person view interface for controlling a monocular drone
-       - Created a system that superimposed a CGI version of the drone on top of an actual image taken by the FPV camera earlier
-       - Designed, conducted, and analyzed user studies which showed a large improvement in many metrics, even with a 2 Hz transmission rate
-   - date: 2014--2015
-     about: Yozakura
-     department: Mechatronics Lab, Kyoto University
-     urls:
-       employer: https://github.com/kyoto-u-shinobi/yozakura_raspi
-       department: http://www.mechatronics.me.kyoto-u.ac.jp/index.php?ml_lang=en
-     topic: A teleoperated rescue robot
-     location: Kyoto, Japan
-     notes:
-       - Led the software development team
-       - Developed a client-server system for robot control and wrote code for onboard Raspberry Pi and mbed chips,
-         including drivers for various controllers and sensors
-       - The code was robust against failure and well-documented, including automatic correction of operator errors
+  - name: "\\href{https://jnassar.com/cv/projects/spirit}{SPIRIT}"
+    description: "Masters thesis project: third-person view for a monocular UAV"
+    notes:
+      - Created a system that superimposed a CGI version of a drone on top of an actual image taken by its FPV camera earlier
+      - Designed, conducted, and analyzed user studies which showed a large improvement in many metrics, even with 2 Hz transmission
+  - name: "\\href{https://jnassar.com/cv/projects/Yozakura}{Yozakura}"
+    description: Software development lead for a teleoperated rescue robot
+    notes:
+      - "Developed client-server system for robot control: programmed Raspberry Pi and mbed chips, including servo and sensor drivers"
+      - The code was robust against failure and well-documented, including automatic correction of operator errors
+  - name: "\\href{https://jnassar.com/cv/projects/open_source}{Open Source Projects}"
+    description: "Big believer in Open Source: Two packages on PyPI, many repositories on github, and contributions to other projects"
+    notes:
+      - "\\href{https://github.com/masasin/latexipy}{latexipy} (129 stars) for exporting Matplotlib-based plots into native \\LaTeX, \\href{https://github.com/masasin/resume}{this résumé} (118 stars), AoC \\href{https://github.com/masasin/aoc2021}{2021} and \\href{https://github.com/masasin/advent-of-code-2022}{2022}, and more"
+      - Contributions to major and minor open source projects, including numpy, ROS, and more
 
 courses:
   - Modern control theory
