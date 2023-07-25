@@ -77,17 +77,17 @@ certifications:
 
 skills:
   - name: Languages
-    description: Python (incl. scipy stack, pytest), C++, C, Matlab, Bash, \LaTeX\ etc
+    description: Python (incl. scipy, pandas, pytest, sklearn), Javascript, C++, bash
+  - name: Packages
+    description: Jupyter, Streamlit, FastAPI, Pydantic, Vue, SQLAlchemy, Redis
   - name: Dev tools
-    description: Git, PyPI, Pipenv, Docker, ROS, Spark, Devpi, Tox, Travis etc
-  - name: OSes
-    description: Linux (Arch, Fedora, Ubuntu), Mac OS X, Windows (XP+)
-  - name: Hardware
-    description: RPi, Arduino, ESP8266, MicroPython, mbed, PIC, AVR, PLCs
-  - name: 3D software
-    description: Solidworks, Autodesk Inventor, AutoCAD, Sketchup
-  - name: Other
-    description: Vim, Gimp, Inkscape, office suites (LibreOffice, Microsoft, Google)
+    description: Poetry, Git, Docker, CI/CD, documentation (Sphinx, mkdocs), LLMs
+  - name: Robotics
+    description: ROS stack, RPi, ESP8266, Arduino, mbed, MicroPython
+  - name: Electromech.
+    description: Solidworks, Inventor, OpenSCAD, machining, PCB design, soldering
+  - name: Miscellaneous
+    description: Gimp, Inkscape; Linux, macOS X, Windows; Office suites
 
 languages:
   - name: Native
