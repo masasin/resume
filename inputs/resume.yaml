@@ -48,9 +48,10 @@ order:
   - [general, False, False, False]
   - [work, True, Work experience, experience]
   - [education, True, Education, False]
+  - [projects, True, Projects, experience]
   - [skills, True, Technical skills, False]
   - [languages, True, Languages, False]
-  - [coop, True, Co-op internships, experience]
+#  - [coop, True, Co-op internships, experience]
 #  - [publications, True, Publications, False]
 #  - [courses, True, Selected courses, latextype_double_items]
 #  - [certifications, True, Certifications, False]
@@ -96,22 +97,32 @@ languages:
   - name: Intermediate
     description: Dutch, Spanish
   - name: Beginner
-    description: German, Krio, Other
+    description: German, Italian, Krio, Other
 
 work:
-  - date: Dec 2019--Aug 2020
+  - date: Jan 2020-- Present
+    about: Senior Software Developer
+    employer: Adimian
+    location: Brussels, Belgium
+    urls:
+      employer: https://adimian.com
+    notes:
+      - Took end-to-end project responsibility, including initial design, development, deployment, and maintenance
+      - Developed and maintained a variety of Python applications, including a web-based data management system and a data processing pipeline
+      - Utilized Python libraries like Pydantic, FastAPI, SqlAlchemy, and Redis for backend development and Vue for frontend tasks
+      - Efficiently addressed bug reports and managed releases, maintaining high-standard deliverables
+      - Leveraged tutoring experience to mentor colleagues, helping them improve their skills and on-board new team members, to high praise
+  - date: Dec 2019-- Aug 2020
     about: Senior Python Developer
     employer: Yields.io
     location: Brussels, Belgium
     urls:
       employer: https://yields.io
     notes:
-      - Tested, refactored, and stabilized codebase, fixed bugs, developed new features, and added client-facing Jupyter notebooks
-      - Split core monolith into three independent packages, allowing clients to implement their proprietary algorithms
-      - Added thousands of unit tests and multiple end-to-end tests/notebooks
-      - Automatically migrated client code and artifacts with version changes
-      - Worked on migrating integration tests from mocks to API in Docker
-
+      - Served as the primary Python developer, working on the platform core
+      - Refactored and stabilized the codebase, added tests, fixed bugs, and developed new features
+      - Worked on automatically migrating and testing client code and artifacts with version increases, and deprecated old features
+      - Moved integration tests away from depending on mocks into tests that worked with a deployed Docker environment
   - date: Mar--Oct 2019
     about: Industrial Automation Engineer
     employer: Kapernikov
@@ -119,11 +130,10 @@ work:
     urls:
       employer: https://kapernikov.com
     notes:
-      - Developed a laser profiler-based computer vision system to monitor a conveyor belt using Python 3 and ROS
-      - Detected objects which could disrupt downstream process in real time
-      - Visualized measurements and events, and published to client VMS
-      - Interfaced with and fixed some bugs in existing C++ code
-
+      - Developed a conveyor belt monitoring system using Python 3 and ROS
+      - Used a laser profiler and camera for object identification and created a 3D representation of the conveyor belt
+      - Detected potentially disruptive objects in real time and produced visualizations for the client’s video management system
+      - Fixed C++ bugs and created a standalone ROS node for the camera
   - date: Feb--Dec 2018
     about: Data Scientist/Python Developer
     employer: Sentiance
@@ -131,11 +141,12 @@ work:
     urls:
       employer: https://sentiance.com
     notes:
-      - Worked on moving the company's codebase from Python 2 to 3
-      - Refactored core functionality into modular components
-      - Verified and built machine learning models built in numpy and sklearn
-      - Added new functionality and increased code efficiency with Spark
-
+      - Moved the company’s codebase from Python 2 to Python 3
+      - Refactored core functionality into more modular components
+      - Verified and built machine learning models in numpy and scikit-learn
+      - Used pyspark to parallelize code execution, or to add new functionality
+      - Created several docker containers and docker-compose files to automate environment setup and teardown
+      - Worked on standardizing DevPI index contents using Pipenv
 coop:
   - date: May--Aug 2012
     about: Design Engineer
@@ -224,6 +235,7 @@ education:
       - Created and tested a third-person view for drones using Python and ROS
       - Led the lab's teleop rescue robot software team (for RoboCup Japan)
       - Tutored Python and software development best practices
+      - Worked on gestural controls for robots
   - date: 2008--2013
     school: University of Waterloo
     location: Waterloo, ON, Canada
@@ -232,13 +244,37 @@ education:
       school: http://www.uwaterloo.ca
       major: https://uwaterloo.ca/mechanical-mechatronics/engineering/program-overview
     notes:
-      - Completed six co-op internships in three countries
+      - "Completed \\href{https://jnassar.com/cv/work/coop}{six co-op internships} in three countries"
       - Cofounded the Engineering Ambassador program
       - Directed the UW EngSoc Mental Health Awareness directorship
       - Taught Japanese with the UW Culture and Language Exchange Club
 
 projects:
-  - Résumé and cover letter generator (Python, Jinja, and \LaTeX)
+   - date: 2015--2017
+     about: SPIRIT
+     department: Mechatronics Lab, Kyoto University
+     urls:
+       employer: https://github.com/masasin/spirit
+       department: http://www.mechatronics.me.kyoto-u.ac.jp/index.php?ml_lang=en
+     topic: A UAV Teleoperation System Using Subimposed Past Images
+     location: Kyoto, Japan
+     notes:
+       - Masters thesis project, developing a third-person view interface for controlling a monocular drone
+       - Created a system that superimposed a CGI version of the drone on top of an actual image taken by the FPV camera earlier
+       - Designed, conducted, and analyzed user studies which showed a large improvement in many metrics, even with a 2 Hz transmission rate
+   - date: 2014--2015
+     about: Yozakura
+     department: Mechatronics Lab, Kyoto University
+     urls:
+       employer: https://github.com/kyoto-u-shinobi/yozakura_raspi
+       department: http://www.mechatronics.me.kyoto-u.ac.jp/index.php?ml_lang=en
+     topic: A teleoperated rescue robot
+     location: Kyoto, Japan
+     notes:
+       - Led the software development team
+       - Developed a client-server system for robot control and wrote code for onboard Raspberry Pi and mbed chips,
+         including drivers for various controllers and sensors
+       - The code was robust against failure and well-documented, including automatic correction of operator errors
 
 courses:
   - Modern control theory
@@ -320,7 +356,7 @@ courses:
 #
 ## and with notes
 # section_tag:
-#   - name: not used in pdf unless there's  also a description
+#   - name: not used in pdf unless there's also a description
 #     notes:
 #       - list
 #       - of

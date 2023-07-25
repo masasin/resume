@@ -18,7 +18,7 @@
           {<< item.date >>}
           {~< if item.about is defined >~<< item.about >>~< endif >~}
           {~< if item.urls is defined >~~< if item.urls.department is defined >~\href{<< item.urls.department >>}{~< endif >~~< endif >~%
-             ~<if item.department is defined >~<< item.department >>
+             ~<if item.department is defined >~<< item.department >>%
            ~< if item.urls is defined >~~< if item.urls.department is defined >~}~< endif >~~< endif >~, ~< endif >~
            ~< if item.urls is defined >~~< if item.urls.employer is defined >~\href{<< item.urls.employer >>}{~< endif >~~< endif >~%
              ~< if item.employer is defined >~<< item.employer >>~< elif item.topic is defined >~<< item.topic >>~< endif >~%
