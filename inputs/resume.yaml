@@ -19,36 +19,35 @@ theme:
 
 title: Python \& Robotics Expert \hspace{4cm} \Large{with 10+ years of experience}
 extra_info: |
-    32M, Canadian \\
-    Master of Engineering \\
+  33M, Canadian \\
+  Master of Engineering \\
 # quote: Ad astra
-
 # Markdown details
 # pdf: https://masasin.github.io/resumes/2016-csa.pdf
 # source: https://github.com/masasin/resume
 
 contact:
   email: jn.masasin@gmail.com
-  mobile:  +32 499 41 28 47
+  mobile: +32 499 41 28 47
   website: jnassar.com
   github: masasin
   linkedin: masasin
 
 # address:
-  # street: Boomgaardstraat 113, Bus 202
-  # city: Antwerpen
-  # province: Antwerpen
-  # country: Belgium
-  # post: 2018
+# street: Boomgaardstraat 113, Bus 202
+# city: Antwerpen
+# province: Antwerpen
+# country: Belgium
+# post: 2018
 
 order:
-# tag, show_title, name, type of sections. Use False if you want to leave it empty.
+  # tag, show_title, name, type of sections. Use False if you want to leave it empty.
   - [intro, False, Summary, False]
-  - [general, False, False, False]
+  # - [general, False, False, False]
   - [work, True, Work experience, experience]
   - [projects, True, Projects, False]
   - [education, True, Education, False]
-#  - [coop, True, Co-op internships, experience]
+  #  - [coop, True, Co-op internships, experience]
   - [skills, True, Technical skills, False]
   - [languages, True, Languages, False]
 #  - [publications, True, Publications, False]
@@ -60,12 +59,12 @@ intro:
     description: |
       I'm a senior engineer with 10+ years of multidisciplinary experience.
       I focus on software development and hardware interfacing,
-      but I am also strong in mechanical design, data science, and web dev. 
+      but I am also strong in mechanical design, data science, and backend web dev.
 
-general: 
+general:
   - name: Availability
     description: |
-      Available from 1 September 2023. EU Blue Card holder.
+      Available from 1 October 2024. EU Blue Card holder.
   - name: Certifications
     description: Driving license (BE 2018), Society of Mechanical Engineers (JP 2017)
 
@@ -77,7 +76,7 @@ certifications:
 
 skills:
   - name: Languages
-    description: Python (incl. scipy, pandas, pytest, sklearn), Javascript, C++, bash
+    description: Python (incl. scipy, pandas, pytest, sklearn), Ruby, Javascript, C++
   - name: Packages
     description: Jupyter, Streamlit, FastAPI, Pydantic, Vue, SQLAlchemy, Redis
   - name: Dev tools
@@ -96,11 +95,19 @@ languages:
     description: Japanese, Arabic
   - name: Intermediate
     description: Dutch, Spanish
-  - name: Beginner
-    description: German, Italian, Krio, Other
 
 work:
-  - date: Jan 2020-- Present
+  - date: Sep 2023-- Present
+    about: Software Developer
+    employer: Nipro Digital Technologies Europe
+    location: Brugge, Belgium
+    urls:
+      employer: https://www.nipro-group.com/en/
+    notes:
+      - "Developed new features and fixed bugs in the \\href{https://www.nipro-group.com/en/our-offer/products-services/nephroflowtm-product-suite}{NephroFlow} dialysis management application using Ruby on Rails and PostgreSQL"
+      - Implemented functionalities across various modules, including regulatory reporting, dialysis prescription management, contact management, order management, and support for new care types and configurable units
+      - Collaborated with the team to triage and resolve bugs, tackle technical debt, and actively participate in the release process, including testing, documentation, and monitoring
+  - date: Jan 2020-- Aug 2023
     about: Senior Software Developer
     employer: Adimian
     location: Brussels, Belgium
@@ -145,7 +152,6 @@ work:
       - Refactored core functionality into more modular components
       - Verified and built machine learning models in numpy and scikit-learn
       - Used pyspark to parallelize code execution, or to add new functionality
-      - Created several docker containers and docker-compose files to automate environment setup and teardown
       - Worked on standardizing DevPI index contents using Pipenv
 coop:
   - date: May--Aug 2012
@@ -233,7 +239,6 @@ education:
     notes:
       - "Thesis: \\href{https://github.com/masasin/spirit/releases/download/v1.0/mshtsy_thesis.pdf}{A UAV Teleoperation System Using Subimposed Past Images}"
       - Tutored Python and software development best practices
-      - Worked on gestural controls for robots
   - date: 2008--2013
     school: University of Waterloo
     location: Waterloo, ON, Canada
@@ -245,7 +250,6 @@ education:
       - "Completed \\href{https://jnassar.com/cv/work/coop}{six co-op internships} in three countries"
       - Cofounded the Engineering Ambassador program
       - Directed the UW EngSoc Mental Health Awareness directorship
-      - Taught Japanese with the UW Culture and Language Exchange Club
 
 projects:
   - name: "\\href{https://jnassar.com/cv/projects/spirit}{SPIRIT}"
@@ -257,12 +261,10 @@ projects:
     description: Software development lead for a teleoperated rescue robot
     notes:
       - "Developed client-server system for robot control: programmed Raspberry Pi and mbed chips, including servo and sensor drivers"
-      - The code was robust against failure and well-documented, including automatic correction of operator errors
   - name: "\\href{https://jnassar.com/cv/projects/open_source}{Open Source Projects}"
-    description: "Big believer in Open Source: Two packages on PyPI, many repositories on github, and contributions to other projects"
+    description: "Two packages on PyPI, many repositories on github, and contributions to other projects such as numpy, ROS, and more"
     notes:
       - "\\href{https://github.com/masasin/latexipy}{latexipy} (129 stars) for exporting Matplotlib-based plots into native \\LaTeX, \\href{https://github.com/masasin/resume}{this résumé} (118 stars), AoC \\href{https://github.com/masasin/aoc2021}{2021} and \\href{https://github.com/masasin/advent-of-code-2022}{2022}, and more"
-      - Contributions to major and minor open source projects, including numpy, ROS, and more
 
 courses:
   - Modern control theory
@@ -273,8 +275,6 @@ courses:
   - Mechatronic systems
   - Computer structures, realtime
   - Algorithms and data structures
-
-
 # Template
 #
 # name:
