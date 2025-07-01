@@ -19,7 +19,7 @@ theme:
 
 title: Python \& Robotics Expert \hspace{4cm} \Large{with 10+ years of experience}
 extra_info: |
-  33M, Canadian \\
+  34M, Canadian \\
   Master of Engineering \\
 # quote: Ad astra
 # Markdown details
@@ -27,7 +27,7 @@ extra_info: |
 # source: https://github.com/masasin/resume
 
 contact:
-  email: jn.masasin@gmail.com
+  email: jean@jnassar.com
   mobile: +32 499 41 28 47
   website: jnassar.com
   github: masasin
@@ -76,11 +76,11 @@ certifications:
 
 skills:
   - name: Languages
-    description: Python (incl. scipy, pandas, pytest, sklearn), Ruby, Javascript, C++
+    description: Python (incl. scientific; pytest), Ruby (incl. Rails), Javascript, C++
   - name: Packages
-    description: Jupyter, Streamlit, FastAPI, Pydantic, Vue, SQLAlchemy, Redis
+    description: Jupyter, FastAPI, Pydantic, Vue, SQLAlchemy, PostgreSQL, Redis
   - name: Dev tools
-    description: Poetry, Git, Docker, CI/CD, documentation (Sphinx, mkdocs), LLMs
+    description: Git, Docker, CI/CD, documentation (Sphinx, mkdocs), LLMs
   - name: Robotics
     description: ROS stack, RPi, ESP8266, Arduino, mbed, MicroPython
   - name: Electromech.
@@ -97,15 +97,15 @@ languages:
     description: Dutch, Spanish
 
 work:
-  - date: Sep 2023-- Present
+  - date: Sep 2023-- Jun 2025
     about: Software Developer
     employer: Nipro Digital Technologies Europe
     location: Brugge, Belgium
     urls:
       employer: https://www.nipro-group.com/en/
     notes:
-      - "Developed new features and fixed bugs in the \\href{https://www.nipro-group.com/en/our-offer/products-services/nephroflowtm-product-suite}{NephroFlow} dialysis management application using Ruby on Rails and PostgreSQL"
-      - Implemented functionalities across various modules, including regulatory reporting, dialysis prescription management, contact management, order management, and support for new care types and configurable units
+      - "Designed and developed new features and fixed bugs in the \\href{https://www.nipro-group.com/en/our-offer/products-services/nephroflowtm-product-suite}{NephroFlow} dialysis management application using Ruby on Rails and PostgreSQL"
+      - Implemented functionality across various modules, including regulatory reporting, dialysis prescription management, authentication, user and patient management, support for configurable units, and more
       - Collaborated with the team to triage and resolve bugs, tackle technical debt, and actively participate in the release process, including testing, documentation, and monitoring
   - date: Jan 2020-- Aug 2023
     about: Senior Software Developer
