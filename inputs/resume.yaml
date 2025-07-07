@@ -18,7 +18,7 @@ theme:
 #   colour: black, blue, green, grey, orange, purple, red; default is blue
 
 title: Python \& Robotics Expert \hspace{4cm} \Large{with 10+ years of experience}
-extra_info: |
+extra_info: |   # TO CHECK
   34M, Canadian \\
   Master of Engineering \\
 # quote: Ad astra
@@ -63,8 +63,8 @@ intro:
 
 general:
   - name: Availability
-    description: |
-      Available from 1 October 2024. EU Blue Card holder.
+    description: |   # TO CHECK
+      Available immediately. EU Blue Card holder.
   - name: Certifications
     description: Driving license (BE 2018), Society of Mechanical Engineers (JP 2017)
 
@@ -104,10 +104,10 @@ work:
     urls:
       employer: https://www.nipro-group.com/en/
     notes:
-      - "Designed and developed new features and fixed bugs in the \\href{https://www.nipro-group.com/en/our-offer/products-services/nephroflowtm-product-suite}{NephroFlow} dialysis management application using Ruby on Rails and PostgreSQL"
-      - Implemented functionality across various modules, including regulatory reporting, dialysis prescription management, authentication, user and patient management, support for configurable units, and more
-      - Collaborated with the team to triage and resolve bugs, tackle technical debt, and actively participate in the release process, including testing, documentation, and monitoring
-  - date: Jan 2020-- Aug 2023
+      - Led the end-to-end design and implementation of multiple critical features for the NephroFlow dialysis management application (Ruby on Rails, PostgreSQL), delivering complex modules such as a from-scratch OIDC/LDAP authentication integration
+      - Engineered key data and reporting solutions, automating the generation of complex regulatory reports by handling numerous edge cases in production data, and implementing the foundational backend architecture for a new analytics dashboard which uses dbt and Cube.js
+      - Served as the company's subject matter expert on LLMs and their integration, advising colleagues across the company and leading a successful series of exploratory hackathons
+  - date: Jan 2021-- Aug 2023
     about: Senior Software Developer
     employer: Adimian
     location: Brussels, Belgium
