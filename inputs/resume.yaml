@@ -17,7 +17,7 @@ theme:
   colour: purple
 #   colour: black, blue, green, grey, orange, purple, red; default is blue
 
-title: Python \& Robotics Expert \hspace{4cm} \Large{with 10+ years of experience}
+title: 10+ YOE Python \& Robotics \hspace{4cm} \Large{and a passion for AI}
 extra_info: |   # TO CHECK
   34M, Canadian \\
   Master of Engineering \\
@@ -57,9 +57,9 @@ order:
 intro:
   - name: "Summary"
     description: |
-      I'm a senior engineer with 10+ years of multidisciplinary experience.
-      I focus on software development and hardware interfacing,
-      but I am also strong in mechanical design, data science, and backend web dev.
+      As a senior engineer with 10+ years of multidisciplinary experience,
+      I enjoy interfacing with hardware, and am strong in data science and backend development.
+      I am passionate about AI.
 
 general:
   - name: Availability
