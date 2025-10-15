@@ -68,7 +68,7 @@
 ~< if business is defined >~
 \rfoot{\ifthenelse{\value{page}=1}{}{\addressfont\itshape\textcolor{gray}{\thepage}}}
 % Letter Information
-\recipient{<< business.letter.addressee >>}{<<business.name.formal>> \\ << business.letter.address >>}
+\recipient{<< business.letter.addressee >>}{~< if business.letter.address is defined >~<<business.name.formal>> \\ << business.letter.address >>~< endif >~}
 \date{\today}
 \opening{~< if business.letter.greeting is defined >~<< business.letter.greeting >>~< else >~To whom it may concern,~< endif >~}
 \closing{~< if business.letter.closing is defined >~<< business.letter.closing >>~< else >~Sincerely,~< endif >~}

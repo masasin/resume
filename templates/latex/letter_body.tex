@@ -1,6 +1,6 @@
 ~< if business.letter.custom_pre is defined >~
   << business.letter.custom_pre >>%
-~< endif >~~< if business.position.has_posting >~%
+~< else >~~< if business.position.has_posting >~%
 I saw your job posting for << business.position.name >>
     ~< if business.position.posting_id is defined >~ (<< business.position.posting_id >>) ~< endif >~
 ~< else >~
@@ -15,6 +15,7 @@ at
 ~< if business.position.has_posting >~
     , and would like to apply%
 ~< endif >~.
+~< endif >~
 
 ~< if business.best_in is defined >~
     I know that
@@ -30,6 +31,7 @@ at
 
 ~< if business.letter.custom_post is defined >~
   << business.letter.custom_post >>
+~< else >~
+Thank you for taking the time to review my application.
 ~< endif >~
 
-Thank you for taking the time to review my application.

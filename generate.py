@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
 """
 Generates LaTeX, Markdown, and HTML copies of my résumé.
 
