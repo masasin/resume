@@ -17,7 +17,7 @@ theme:
   colour: purple
 #   colour: black, blue, green, grey, orange, purple, red; default is blue
 
-title: 10+ YOE Python \& Robotics \hspace{4cm} \Large{and a passion for AI}
+title: Senior Python Backend Engineer -- Robotics \& Data Systems
 extra_info: |   # TO CHECK
   34M, Canadian \\
   Master of Engineering \\
@@ -57,9 +57,9 @@ order:
 intro:
   - name: "Summary"
     description: |
-      As a senior engineer with 10+ years of multidisciplinary experience,
-      I enjoy interfacing with hardware, and am strong in data science and backend development.
-      I am passionate about AI.
+      Senior Backend Engineer with 10+ years of experience building and stabilizing resilient software systems.
+      Proven expertise in architecting scalable Python applications (FastAPI, SQLAlchemy) and implementing comprehensive testing strategies.
+      Multidisciplinary background in robotics (ROS, C++) and data pipelines.
 
 general:
   - name: Availability
@@ -75,18 +75,18 @@ certifications:
     description: Member (Japan Society of Mechanical Engineers)
 
 skills:
-  - name: Languages
-    description: Python (incl. scientific; pytest), Ruby (incl. Rails), Javascript, C++
-  - name: Packages
-    description: Jupyter, FastAPI, Pydantic, Vue, SQLAlchemy, PostgreSQL, Redis
-  - name: Dev tools
-    description: Git, Docker, CI/CD, documentation (Sphinx, mkdocs), LLMs
+  - name: Backend
+    description: Python (incl. pytest, FastAPI), SQLAlchemy, PostgreSQL, Redis
+  - name: DevOps
+    description: Docker, AWS, CI/CD, Git
   - name: Robotics
-    description: ROS stack, RPi, ESP8266, Arduino, mbed, MicroPython
-  - name: Electromech.
-    description: Solidworks, Inventor, OpenSCAD, machining, PCB design, soldering
-  - name: Miscellaneous
-    description: Gimp, Inkscape; Linux, macOS X, Windows; Office suites
+    description: C\texttt{++}, ROS, RPi, ESP8266, Arduino, mbed, MicroPython, PCB design
+  - name: Software
+    description: Scientific Python Stack, Jupyter, Ruby (Rails), Javascript (Vue), LLMs
+  - name: CAD
+    description: OnShape, Fusion, Solidworks, Inventor, OpenSCAD
+  - name: OSes
+    description: Linux, macOS, Windows
 
 languages:
   - name: Native
@@ -104,9 +104,9 @@ work:
     urls:
       employer: https://www.nipro-group.com/en/
     notes:
-      - Led the end-to-end design and implementation of multiple critical features for the NephroFlow dialysis management application (Ruby on Rails, PostgreSQL), delivering complex modules such as a from-scratch OIDC/LDAP authentication integration
-      - Engineered key data and reporting solutions, automating the generation of complex regulatory reports by handling numerous edge cases in production data, and implementing the foundational backend architecture for a new analytics dashboard which uses dbt and Cube.js
-      - Served as the company's subject matter expert on LLMs and their integration, advising colleagues across the company and leading a successful series of exploratory hackathons
+      - Led end-to-end design and implementation of critical backend features for a complex medical data application (Ruby on Rails, PostgreSQL).
+      - Architected the foundational backend for a new analytics dashboard, processing production data with dbt and Cube.js.
+      - Delivered a from-scratch OIDC/LDAP authentication integration, meeting enterprise security and interoperability requirements.
   - date: Jan 2021-- Aug 2023
     about: Senior Software Developer
     employer: Adimian
@@ -114,11 +114,10 @@ work:
     urls:
       employer: https://adimian.com
     notes:
-      - Took end-to-end project responsibility, including initial design, development, deployment, and maintenance
-      - Developed and maintained a variety of Python applications, including a web-based data management system and a data processing pipeline
-      - Utilized Python libraries like Pydantic, FastAPI, SqlAlchemy, and Redis for backend development and Vue for frontend tasks
-      - Efficiently addressed bug reports and managed releases, maintaining high-standard deliverables
-      - Leveraged tutoring experience to mentor colleagues, helping them improve their skills and on-board new team members, to high praise
+      - Architected and developed resilient backend systems and data processing pipelines using Python, FastAPI, Pydantic, and SQLAlchemy.
+      - Took end-to-end ownership of projects, from initial design and development through to deployment, monitoring, and maintenance.
+      - Implemented comprehensive test suites using pytest, ensuring high code quality and maintainability for all deliverables.
+      - Mentored colleagues in Python and backend development best practices, improving team skills and onboarding new members.
   - date: Dec 2019-- Aug 2020
     about: Senior Python Developer
     employer: Yields.io
@@ -126,10 +125,9 @@ work:
     urls:
       employer: https://yields.io
     notes:
-      - Served as the primary Python developer, working on the platform core
-      - Refactored and stabilized the codebase, added tests, fixed bugs, and developed new features
-      - Worked on automatically migrating and testing client code and artifacts with version increases, and deprecated old features
-      - Moved integration tests away from depending on mocks into tests that worked with a deployed Docker environment
+      - Systematically refactored and stabilized a complex Python codebase, introducing thousands of tests to greatly improve stability and reliability.
+      - Engineered a Docker-based integration testing environment to replace unreliable mocks, ensuring accurate, real-world API validation.
+      - Led the migration and automated testing of client code and artifacts across platform versions.
   - date: Mar--Oct 2019
     about: Industrial Automation Engineer
     employer: Kapernikov
@@ -137,10 +135,9 @@ work:
     urls:
       employer: https://kapernikov.com
     notes:
-      - Developed a conveyor belt monitoring system using Python 3 and ROS
-      - Used a laser profiler and camera for object identification and created a 3D representation of the conveyor belt
-      - Detected potentially disruptive objects in real time and produced visualizations for the client’s video management system
-      - Fixed C++ bugs and created a standalone ROS node for the camera
+      - Developed a conveyor belt monitoring system using Python 3 and ROS.
+      - Used a laser profiler and camera to create a 3D representation of the environment for real-time object detection.
+      - Fixed bugs in C++ drivers and created a standalone ROS node for camera communication.
   - date: Feb--Dec 2018
     about: Data Scientist/Python Developer
     employer: Sentiance
@@ -148,11 +145,9 @@ work:
     urls:
       employer: https://sentiance.com
     notes:
-      - Moved the company’s codebase from Python 2 to Python 3
-      - Refactored core functionality into more modular components
-      - Verified and built machine learning models in numpy and scikit-learn
-      - Used pyspark to parallelize code execution, or to add new functionality
-      - Worked on standardizing DevPI index contents using Pipenv
+      - Led the migration of the company's core codebase from Python 2 to 3.
+      - Refactored monolithic functionality into modular, testable components.
+      - Utilized PySpark to parallelize data processing workloads and improve efficiency.
 coop:
   - date: May--Aug 2012
     about: Design Engineer
